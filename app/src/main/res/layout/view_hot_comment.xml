@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="@dimen/twelve">
+
+    <View
+        android:id="@+id/v_hot_comment_background1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.4"
+        android:background="@drawable/bg_embellish_card_view"
+        app:layout_constraintBottom_toBottomOf="@id/tv_comment1"
+        app:layout_constraintEnd_toEndOf="@id/tv_comment1"
+        app:layout_constraintStart_toStartOf="@id/user_icon1"
+        app:layout_constraintTop_toTopOf="@id/tv_comment1" />
+
+    <ImageView
+        android:id="@+id/user_icon1"
+        android:layout_width="@dimen/thirty_two"
+        android:layout_height="@dimen/twenty_four"
+        android:paddingStart="@dimen/four"
+        android:paddingEnd="@dimen/four"
+        app:layout_constraintBottom_toBottomOf="@id/tv_comment1"
+        app:layout_constraintEnd_toStartOf="@id/tv_comment1"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_comment1"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_comment1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingStart="@dimen/two"
+        android:paddingTop="@dimen/seven"
+        android:paddingEnd="@dimen/four"
+        android:paddingBottom="@dimen/seven"
+        android:textColor="@color/colorText"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/user_icon1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="别幻想了，BTC马上要归零了，机构割肉..." />
+
+    <View
+        android:id="@+id/v_hot_comment_background2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.2"
+        android:background="@drawable/bg_embellish_card_view"
+        app:layout_constraintBottom_toBottomOf="@id/tv_comment2"
+        app:layout_constraintEnd_toEndOf="@id/tv_comment2"
+        app:layout_constraintStart_toStartOf="@id/user_icon2"
+        app:layout_constraintTop_toTopOf="@id/tv_comment2" />
+
+    <ImageView
+        android:id="@+id/user_icon2"
+        android:layout_width="@dimen/thirty_two"
+        android:layout_height="@dimen/twenty_four"
+        android:paddingStart="@dimen/four"
+        android:paddingEnd="@dimen/four"
+        app:layout_constraintBottom_toBottomOf="@id/tv_comment2"
+        app:layout_constraintEnd_toStartOf="@id/tv_comment2"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_comment2"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_comment2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/eight"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingStart="@dimen/two"
+        android:paddingTop="@dimen/seven"
+        android:paddingEnd="@dimen/four"
+        android:paddingBottom="@dimen/seven"
+        android:textColor="@color/colorText"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/user_icon2"
+        app:layout_constraintTop_toBottomOf="@id/tv_comment1"
+        app:layout_goneMarginTop="@dimen/zero"
+        tools:text="早就入局了，比特币翻十倍" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_comment1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="v_hot_comment_background1,user_icon1,tv_comment1" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_comment2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="v_hot_comment_background2,user_icon2,tv_comment2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

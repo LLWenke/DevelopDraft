@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--定义seekbar滑动条的底色-->
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <size android:height="@dimen/three" />
+            <corners android:radius="4dp" />
+            <gradient
+                android:centerColor="#F26E7BD2"
+                android:endColor="#B06E7BD2"
+                android:startColor="#7A6E7BD2" />
+        </shape>
+    </item>
+    <!--定义seekbar滑动条进度颜色-->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <size android:height="@dimen/three" />
+                <corners android:radius="4dp" />
+                <gradient
+                    android:endColor="#FFDA16"
+                    android:startColor="#FEB807" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

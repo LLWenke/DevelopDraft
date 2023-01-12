@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#10000000"
+    tools:context=".MainActivity">
+
+    <com.example.myapplication.HotCommentView
+        android:id="@+id/testView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#99000000"
+        android:paddingStart="@dimen/zero"
+        android:paddingTop="@dimen/zero"
+        android:paddingEnd="@dimen/zero"
+        android:paddingBottom="@dimen/zero" />
+
+    <com.example.myapplication.ShadowLayout
+        android:id="@+id/testView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/testView"
+        android:layout_marginTop="@dimen/thirty"
+        app:hl_cornerRadius="5dp"
+        app:hl_shadowColor="@color/design_default_color_error"
+        app:hl_shadowHiddenTop="true"
+        app:hl_shadowLimit="15dp" />
+
+    <com.example.myapplication.CustomView
+        android:id="@+id/canvas_test"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/testView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/thirty"
+        android:layout_marginEnd="@dimen/twelve" />
+
+    <ImageView
+        android:id="@+id/testView3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/canvas_test"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/thirty"
+        android:layout_marginEnd="@dimen/eighty"
+        android:src="@drawable/ic_audio_dark"
+        tools:ignore="ContentDescription" />
+
+
+    <FrameLayout
+        android:id="@+id/box"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/testView3"
+        android:layout_marginStart="@dimen/twelve"
+        android:layout_marginTop="@dimen/thirty">
+
+        <View
+            android:id="@+id/box_positive"
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:background="@drawable/bg_good_dark"
+            android:rotationY="-90" />
+
+        <View
+            android:id="@+id/box_back"
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:background="@drawable/bg_good" />
+
+    </FrameLayout>
+
+    <com.example.myapplication.ParticleEffectView
+        android:id="@+id/pathAnimView"
+        android:layout_width="90dp"
+        android:layout_height="126dp"
+        android:layout_below="@id/testView3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="14dp"
+        android:background="@drawable/ic_test" />
+
+    <ImageView
+        android:id="@+id/advert_test"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/pathAnimView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/thirty"
+        android:layout_marginEnd="@dimen/thirty"
+        android:scaleType="centerInside"
+        android:src="@drawable/image3"
+        android:visibility="gone"
+        tools:ignore="ContentDescription" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/advert_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pathAnimView"
+        android:layout_marginTop="@dimen/thirty"
+        android:layout_marginEnd="@dimen/thirty"
+        android:text="广告动画切换"
+        android:visibility="gone" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pathAnimView"
+        android:layout_marginTop="30dp">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gl_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gl_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gl_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <View
+            android:layout_width="@dimen/one"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/gl_1"
+            app:layout_constraintStart_toStartOf="@id/gl_1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="@dimen/one"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/gl_2"
+            app:layout_constraintStart_toStartOf="@id/gl_2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="@dimen/one"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/gl_3"
+            app:layout_constraintStart_toStartOf="@id/gl_3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.example.myapplication.RewardsProgressView
+            android:id="@+id/rewardsProgressView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_1a000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/advert_test222"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/image3"
+        android:visibility="visible" />
+
+    <com.example.myapplication.shapeView.ShapeView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginHorizontal="@dimen/ten"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        app:shape="rectangle"
+        app:shape_angle="270"
+        app:shape_endColor="#3C65EE"
+        app:shape_strokeWidth="1dp"
+        app:shape_strokeStartColor="#4DFFFFFF"
+        app:shape_strokeEndColor="#0DFFFFFF"
+        app:shape_radius="12dp"
+        app:shape_shadowColor="#799AFF"
+        app:shape_shadowSize="8dp"
+        app:shape_startColor="#7A9FFF" />
+</RelativeLayout>

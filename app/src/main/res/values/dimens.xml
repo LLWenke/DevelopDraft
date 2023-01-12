@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="wechat_media_grid_size">48dp</dimen>
+
+    <dimen name="wechat_album_item_height">96dp</dimen>
+    <!-- ================================字体大小===================================================-->
+    <dimen name="text_five_size">5sp</dimen>
+    <dimen name="text_eight_size">8sp</dimen>
+    <dimen name="text_nine_size">9sp</dimen>
+    <dimen name="text_ten_size">10sp</dimen>
+    <dimen name="text_eleven_size">11sp</dimen>
+    <dimen name="text_twelve_size">12sp</dimen>
+    <dimen name="text_thirteen_size">13sp</dimen>
+    <dimen name="default_text_size">14sp</dimen>
+    <dimen name="text_fifteen_size">15sp</dimen>
+    <dimen name="text_sixteen_size">16sp</dimen>
+    <dimen name="text_seventeen_size">17sp</dimen>
+    <dimen name="text_eighteen_size">18sp</dimen>
+    <dimen name="text_nineteen_size">19sp</dimen>
+    <dimen name="text_twenty_size">20sp</dimen>
+    <dimen name="text_twenty_one_size">21sp</dimen>
+    <dimen name="text_twenty_four_size">24sp</dimen>
+    <dimen name="text_twenty_five_size">25sp</dimen>
+    <dimen name="text_twenty_eight_size">28sp</dimen>
+    <!-- ================================字体大小====================================================-->
+
+    <!--et:EditText-->
+    <!--tv:TextView-->
+    <!--ly:layout-->
+
+    <dimen name="coin_icon_wh">16dp</dimen>
+
+    <dimen name="bar_title_h">44dp</dimen>
+
+    <dimen name="bar_title_size">18sp</dimen>
+
+    <!--分割线高度-->
+    <dimen name="divider_h">0.5dp</dimen>
+    <dimen name="zero">0dp</dimen>
+    <dimen name="one">1dp</dimen>
+    <dimen name="two">2dp</dimen>
+    <dimen name="three">3dp</dimen>
+    <dimen name="four">4dp</dimen>
+    <dimen name="five">5dp</dimen>
+    <dimen name="six">6dp</dimen>
+    <dimen name="seven">7dp</dimen>
+    <dimen name="eight">8dp</dimen>
+    <dimen name="ten">10dp</dimen>
+    <dimen name="eleven">11dp</dimen>
+    <dimen name="twelve">12dp</dimen>
+    <dimen name="thirteen">13dp</dimen>
+    <dimen name="fourteen">14dp</dimen>
+    <dimen name="fifteen">15dp</dimen>
+    <dimen name="sixteen">16dp</dimen>
+    <dimen name="seventeen">17dp</dimen>
+    <dimen name="eighteen">18dp</dimen>
+    <dimen name="nineteen">19dp</dimen>
+    <dimen name="twenty">20dp</dimen>
+    <dimen name="twenty_three">23dp</dimen>
+    <dimen name="twenty_four">24dp</dimen>
+    <dimen name="twenty_five">25dp</dimen>
+    <dimen name="twenty_eight">28dp</dimen>
+    <dimen name="thirty">30dp</dimen>
+    <dimen name="thirty_two">32dp</dimen>
+    <dimen name="thirty_five">35dp</dimen>
+    <dimen name="thirty_eight">38dp</dimen>
+    <dimen name="forty">40dp</dimen>
+    <dimen name="forty_five">45dp</dimen>
+    <dimen name="fifty">50dp</dimen>
+    <dimen name="fifty_five">55dp</dimen>
+    <dimen name="sixty">60dp</dimen>
+    <dimen name="sixty_five">65dp</dimen>
+    <dimen name="seventy">70dp</dimen>
+    <dimen name="seventy_five">75dp</dimen>
+    <dimen name="eighty">80dp</dimen>
+    <dimen name="eighty_five">85dp</dimen>
+    <dimen name="ninety">90dp</dimen>
+    <dimen name="ninety_five">95dp</dimen>
+    <dimen name="hundred">100dp</dimen>
+    <dimen name="hundred_twenty">120dp</dimen>
+    <dimen name="hundred_fifty">150dp</dimen>
+    <dimen name="hundred_eighty">180dp</dimen>
+    <dimen name="two_hundred">200dp</dimen>
+
+    <dimen name="edit_h">47dp</dimen>
+    <dimen name="btn_h">48dp</dimen>
+    <dimen name="kline_type_view_h">32dp</dimen>
+
+    <dimen name="rose_w">74dp</dimen>
+    <dimen name="rose_h">24dp</dimen>
+
+    <dimen name="dilog_title_h">55dp</dimen>
+    <dimen name="dilog_btn_h">49dp</dimen>
+    <!--market fragment-->
+    <dimen name="market_price_w">90dp</dimen>
+    <!--market fragment-->
+
+    <!--TradingFragment-->
+    <dimen name="trading_menu_h">40dp</dimen>
+    <!--TradingFragment-->
+
+    <!--TradingSellFragmentment-->
+    <!--TradingSellFragmentment-->
+
+    <!--Login-->
+
+    <dimen name="item_spinner_list_h">30dp</dimen>
+    <dimen name="register_item_img_wh">16dp</dimen>
+
+    <!--personal-->
+    <dimen name="personal_btn_h">57dp</dimen>
+
+    <!--TradingFragment-->
+    <dimen name="trading_rectangle_h">33dp</dimen>
+
+    <!--about-->
+
+    <dimen name="switch_thumb_wh">17dp</dimen>
+
+    <dimen name="recommend_viewpage_h">80dp</dimen>
+
+    <dimen name="coin_dsc_h">200dp</dimen>
+
+    <dimen name="financial_mananger_not_order_h">300dp</dimen>
+    <dimen name="rise_month_chart_h">300dp</dimen>
+    <dimen name="rise_month_chart_lable_size">10sp</dimen>
+    <dimen name="rise_month_chart_mark_size">10sp</dimen>
+    <dimen name="rise_month_chart_x_lable_margin_top">7dp</dimen>
+    <dimen name="rise_month_chart_mark_padding">3dp</dimen>
+    <dimen name="rise_month_chart_mark_text_space">3dp</dimen>
+
+    <dimen name="trading_land_depth_change_w">150dp</dimen>
+
+    <!--修改默认（未选中）的文字大小 -->
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">12sp</dimen>
+    <!--修改选中的文字大小 -->
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">12sp</dimen>
+    <dimen name="nine">9dp</dimen>
+
+
+</resources>

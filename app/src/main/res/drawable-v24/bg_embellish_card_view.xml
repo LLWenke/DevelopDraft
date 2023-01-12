@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 矩形圆角+圆出一个圆弧 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 填充颜色 -->
+    <solid android:color="#00E6FF" />
+
+    <!-- 圆角度数 -->
+    <corners android:radius="16dp" />
+
+</shape>
